@@ -1,0 +1,269 @@
+<!-- ========== CO1: Internet Fundamentals & HTML & Introductory CSS Styling ========== -->
+<!-- This file demonstrates basic HTML structure, semantic elements, and CSS styling -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plannerz</title>
+    <style>
+      <!-- CO1: Basic CSS Styling for Layout and Typography -->
+      /* HERO */
+.hero {
+    padding: 80px 60px;
+    max-width: 900px;
+}
+.hero h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+.description {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+}
+
+/* APP PREVIEW */
+.app-preview {
+    padding: 80px 40px;
+    background: #f4f4f2;
+}
+.app-container {
+    max-width: 1200px;
+    margin: auto;
+}
+.app-container img {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    transition: all 0.8s ease;
+}
+
+/*CTA section*/
+.cta{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 120px 40px;
+    margin-top: 50px;
+}
+.cta h2{
+    font-size: 90px;
+    font-weight: 4620;
+    margin-bottom: 25px;
+    margin-top: -15px;
+}
+.cta p{
+    line-height: 1.9;
+    margin:0 auto 50px;
+    font-size: 22px;
+    max-width: 700px;
+
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========== CO1: Semantic HTML & Navigation Structure ========== -->
+    <!-- NAVIGATION - Semantic header structure with nav element -->
+    <header class="navbar">
+      <div class="logo">
+        <h1>Plannerz</h1>
+      </div>
+      <!-- CO4: Navigation with JavaScript interactivity for tab switching -->
+      <nav class="nav-links">
+        <a href="main.html" class="tab active" data-tab="home">Home</a>
+        <a href="calender.html" data-tab="calendar">Calendar</a>
+        <a href="addevents.html" data-tab="add">Add Events</a>
+        <a href="notifiy.html" data-tab="notify">Notifications</a>
+      </nav>
+    </header>
+
+    <hr>
+
+    <section id="home" class="tab-content active">
+        <!-- ========== CO1: Hero Section - HTML & CSS Styling ========== -->
+        <!-- Basic semantic section with heading and paragraph styling -->
+        <!-- HERO SECTION -->
+        <section class="hero">
+          <h1>MASTER YOUR <br>DAY</h1>
+          <p class="description">
+            Elevate your daily routine with Plannerz. Our smart interface and bespoke
+            calendar customization options empower you to coordinate every moment
+            with precision and style.
+          </p>
+        </section>
+        
+        <!-- ========== CO1: App Preview Section - Responsive Image & CSS Layout ========== -->
+        <!-- APP PREVIEW SECTION -->
+        <section class="app-preview">
+          <div class="app-container">
+            <img src="app-preview.jpg" alt="Plannerz App Preview">
+          </div>
+        </section>
+
+        <!-- ========== CO2 & CO4: Progress Section - Semantic HTML & CSS Layouts with JavaScript Interactivity ========== -->
+        <!-- Dynamic progress tracking (CO4: DOM manipulation), Comprehensive CSS Layout (CO2: Flexbox) -->
+        <!-- PROGRESS SECTION -->
+        <section class="progress-section">
+          <h2 class="progress-title">Your Progress</h2>
+          <p class="progress-subtitle">Track your journey and celebrate your milestones as you plan and achieve your goals.</p>
+          <!-- CO2: CSS Layout for progress bar using semantic structure -->
+          <div class="progress-bar-container">
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 65%"></div>
+            </div>
+            <span class="progress-label">65% Complete</span>
+          </div>
+          <br>
+
+          <!-- CO4: Dynamic chart data rendering via JavaScript -->
+          <div class="chart-header">
+            <h3>📊 Weekly Task Completion</h3>
+            <p>Tasks completed each day</p>
+          </div>
+          <div class="chart-container">
+            <div class="simple-bar-chart">
+              <div class="bar-item">
+                <div class="bar-value" style="height: 40%;"></div>
+                <div class="bar-label">Sun</div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-value" style="height: 70%;"></div>
+                <div class="bar-label">Mon</div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-value" style="height: 55%;"></div>
+                <div class="bar-label">Tue</div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-value" style="height: 85%;"></div>
+                <div class="bar-label">Wed</div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-value" style="height: 25%;"></div>
+                <div class="bar-label">Thu</div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-value" style="height: 10%;"></div>
+                <div class="bar-label">Fri</div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-value" style="height: 90%;"></div>
+                <div class="bar-label">Sat</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CO2: Milestone Cards Grid - Semantic HTML structure -->
+          <div class="milestones-grid">
+            <div class="milestone-card">
+              <div class="milestone-icon">🎯</div>
+              <div class="milestone-title">First Task</div>
+              <div class="milestone-desc">You created your first event!</div>
+            </div>
+            <div class="milestone-card">
+              <div class="milestone-icon">📅</div>
+              <div class="milestone-title">Weekly Planner</div>
+              <div class="milestone-desc">You planned a full week.</div>
+            </div>
+            <div class="milestone-card">
+              <div class="milestone-icon">🏆</div>
+              <div class="milestone-title">Consistency Star</div>
+              <div class="milestone-desc">You stayed on track for 7 days!</div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <!-- ========== CO2: Tools Section - Semantic HTML & CSS Grid Layout ========== -->
+        <!-- Demonstrates comprehensive CSS layouts using grid and semantic tags -->
+        <!-- TOOLS SECTION -->
+        <section class="tools-section">
+          <div class="container">
+            <h2 class="section-title">Precision Tools for Modern Planning</h2>
+            <p class="section-subtitle">
+              Elevate your daily workflow with tools designed to transform busy schedules
+              into clear, manageable plans.
+            </p>
+            <div class="tools-grid">
+              <div class="tool-card">
+                <h3>Smart Event Creation</h3>
+                <p>Create, edit, and manage events with precise time and priority controls.</p>
+              </div>
+              <div class="tool-card">
+                <h3>Custom Calendar Views</h3>
+                <p>Switch seamlessly between daily, weekly, and monthly planning views.</p>
+              </div>
+              <div class="tool-card">
+                <h3>Notifications & Alerts</h3>
+                <p>Receive timely reminders to stay on track throughout your day.</p>
+              </div>
+              <div class="tool-card">
+                <h3>Organized Task Management</h3>
+                <p>Track progress, mark completions, and manage priorities effortlessly.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== CO1: Call-to-Action Section - HTML & CSS Styling ========== -->
+        <!-- Simple CTA section with CSS styling -->
+        <section class="cta">
+          <h2>READY TO PLAN?</h2>
+          <p>
+            Take control of your schedule with our artisanal task management tools.
+            Experience mathematical precision in your daily workflow.
+          </p>
+        </section>
+
+        <!-- SPLIT SHOWCASE SECTION -->
+        <section class="showcase">
+          <div class="showcase-image">
+          </div>
+          <div class="showcase-content">
+            <h2>Precision in<br>Every Task</h2>
+            <p>
+              Elevate your daily flow with Plannerz. A smart, artisanal approach to event management that turns chaotic schedules into structured success.
+            </p>
+            <span class="vertical-text">
+              PLANNERZ · PRODUCTIVITY · METHODICAL
+            </span>
+          </div>
+        </section>
+      
+        <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-section left">
+    <div class="footer-logo" style="font-size: 2em; font-weight: bold; color: #222; margin-bottom: 10px; margin-top: 10px;"> Plannerz</div>
+  </div>
+  <div class="footer-section center">
+    <ul class="footer-contact" style="list-style: disc; padding-left: 20px; margin: 0 0 10px 0; color: #222;">
+      <li>hello@plannerz.com</li>
+      <li>+91 6355572690</li>
+      <li>Hyderbad</li>
+    </ul>
+  </div>
+  <div class="footer-section right">
+    <div style="margin-bottom: 10px; color: #444; font-size: 20px;">Smart, engaging, and customized task management for a structured, daily-focused life.</div>
+    <div style="font-size: 1.2em; color: #888;">&copy; 2026 Plannerz. All rights reserved.<br>Every event, Activity, perfectly timed.</div>
+  </div>
+</footer>
+
+</section>
+<!-- END OF PAGE CONTENT -->
+
+    <!-- include chart library for bar graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

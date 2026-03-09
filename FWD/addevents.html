@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plannerz - Calendar</title>
+    <style>
+      body{
+    background: orange;
+      }
+      /* ADD EVENTS FORM */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    font-size: 40px;
+}
+.event-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 30px 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.event-Form input,
+.event-Form select,
+.event-Form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.event-Form label
+{
+    font-size: 20px;
+}
+.event-Form textarea {
+    resize: vertical;
+}
+.submit-btn {
+    background: linear-gradient(90deg, #ff6a32 60%, #ffb88c 100%);
+    color: #fff;
+    border: none;
+    padding: 14px 52px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 20px auto 0;
+}
+.submit-btn:hover {
+    background: #e65a26;
+    transform: translateY(-2px);
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+      <div class="logo">
+        <h1>Plannerz</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="main.html" class="tab" data-tab="home">Home</a>
+        <a href="calender.html" class="tab" data-tab="calendar">Calendar</a>
+        <a href="addevents.html" class="tab active" data-tab="add">Add Events</a>
+        <a href="notifiy.html" class="tab" data-tab="notify">Notifications</a>
+      </nav>
+    </header>
+
+    <hr>
+    
+<!--add events tab -->
+<section id="add" class="tab-content active">
+      <h2>Add New Event</h2>
+        <form class="event-Form">
+          <label for="eventTitle">Title*</label>
+          <input type="text" id="eventTitle" name="eventTitle" required>
+<br>
+          <label for="eventDate">Date*</label>
+          <input type="date" id="eventDate" name="eventDate" required>
+<br>
+          <label for="eventTime">Time*</label>
+          <input type="time" id="eventTime" name="eventTime" required>
+<br>
+          <label for="eventPriority">Priority*</label>
+          <select id="eventPriority" name="eventPriority" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+<br>
+          <label for="eventDesc">Description</label>
+          <textarea id="eventDesc" name="eventDesc" rows="3"></textarea>
+<br>
+          <button type="submit" class="submit-btn">Add Event</button>
+        </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-section left">
+    <div class="footer-logo" style="font-size: 2em; font-weight: bold; color: #222; margin-bottom: 10px; margin-top: 10px;"> Plannerz</div>
+  </div>
+  <div class="footer-section center">
+    <ul class="footer-contact" style="list-style: disc; padding-left: 20px; margin: 0 0 10px 0; color: #222;">
+      <li>hello@plannerz.com</li>
+      <li>+91 6355572690</li>
+      <li>Hyderbad</li>
+    </ul>
+  </div>
+  <div class="footer-section right">
+    <div style="margin-bottom: 10px; color: #444; font-size: 20px;">Smart, engaging, and customized task management for a structured, daily-focused life.</div>
+    <div style="font-size: 1.2em; color: #888;">&copy; 2026 Plannerz. All rights reserved.<br>Every event, Activity, perfectly timed.</div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
