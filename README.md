@@ -1,21 +1,23 @@
 # 📅 Plannerz
 
-A full-stack event management application combining **Java Desktop Application** with a **Web-based Frontend** to create, manage, and visualize events efficiently.
+A full-stack event management application combining **Java Desktop Application** and a **Web-based Frontend** to create, manage, and visualize events efficiently.
 
 ## 🎯 Project Overview
 
-Evensem is a university/college semester event planner that uses **Data Structures & Algorithms (DSA)** concepts to manage events. It features:
+Plannerz uses **Data Structures & Algorithms (DSA)** concepts to manage events. It features:
 - 📱 Java Swing GUI for event creation
 - 🌐 Interactive web interface with calendar view
-- 🔄 Real-time event synchronization via JSON
 - 📢 Notifications dashboard with auto-refresh
 
 ## 📁 Project Structure
-Evensem/
 
 ├── DSA/
 
 │ └── DSAmain.java # Java desktop application (GUI)
+
+│ └── AddEventDialog.java
+
+│ └── EventList.java
 
 └── FWD/ # Frontend - Web interface
 
@@ -38,13 +40,12 @@ Evensem/
 
 ## ⚙️ Features
 
-### Backend (Java - DSA)
+### (Java - DSA)
 - ✅ **Linked List Implementation** - Events stored using singly linked lists (List ADT)
 - ✅ **GUI Interface** - User-friendly Swing application for adding events
 - ✅ **Event Management** - Create, store, and manage events with dates, times, and descriptions
-- ✅ **JSON Export** - Automatically saves events to `events.json` for web access
 
-### Frontend (HTML/CSS/JavaScript)
+### (HTML/CSS/JavaScript)
 - ✅ **Calendar View** - Visual calendar display of all events
 - ✅ **Event Cards** - Beautiful card layout showing event details
 - ✅ **Color Coding** - Events categorized by type with distinct colors:
@@ -72,9 +73,10 @@ Evensem/
    git clone https://github.com/duddukuribalacharan777/Plannerz.git
    cd Evensem
 2. **Run the Java Application**
-   cd DSA
-javac DSAmain.java
-java DSAmain
+
+       cd DSA
+       javac DSAmain.java
+       java DSAmain
 
 4. **Open the Web Interface**
    
@@ -150,15 +152,9 @@ Events are stored in JSON format in FWD/events.json:
     ]
 **🛠️ Technologies Used**
 
-*Backend*
-
 Java - Desktop application with Swing GUI
 
 Data Structures - Linked List ADT implementation
-
-File I/O - JSON serialization
-
-*Frontend*
 
 HTML5 - Structure and layout
 
@@ -166,15 +162,6 @@ CSS3 - Styling and responsive design
 
 JavaScript - Event handling and dynamic updates
 
-JSON - Data interchange format
-
-**📚 DSA Concepts Implemented**
-
-Linked List (List ADT) - Events stored as nodes in a singly linked list
-
-Data Serialization - Converting Java objects to JSON format
-
-CRUD Operations - Create, Read, Update operations on events
 
 
 
