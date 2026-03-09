@@ -1,6 +1,6 @@
 # DSA - Data Structures and Algorithms Implementation
 
-This folder contains the Java implementation of an Event Management System using Data Structures and Algorithms concepts.
+This folder contains the Java implementation of **Plannerz** using Data Structures and Algorithms concepts.
 
 ## Overview
 
@@ -13,7 +13,6 @@ The `DSAmain.java` file implements an event management application that demonstr
 
 - Add new events with title, type, time, description, and date
 - View all stored events in a formatted display
-- Persistent storage using JSON file integration with the web component
 - Gradient UI design for better user experience
 
 ## Prerequisites
@@ -50,5 +49,3 @@ The `DSAmain.java` file implements an event management application that demonstr
 
 - **Singly Linked List**: Each `Event` node contains event data and a reference to the next event
 - Head pointer manages the list operations (insertion, traversal)
-
-This implementation serves as a college project demonstrating practical application of DSA concepts in a real-world event management system.
